@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+.hero {
+    width: 1662px;
+    height: 1024px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, #A54343, #E73535);
+    overflow: hidden;
+}
+
+
+
+.hero-text {
+    width: 517px;
+    float: left;
+    margin-left: 165px;
+    margin-top: 223px;
+    color: white;
+}
+
+
+
+.hero-title {
+    font-size: 140px;
+    font-weight: 700;
+    line-height: 127px;
+    letter-spacing: -1.58px;
+    margin-bottom: 24px;
+}
+
+
+
+.hero-description {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34px;
+    margin-bottom: 32px;
+}
+
+
+
+.hero-price {
+    width: 294px;
+    height: 98px;
+    display: block;
+    margin-bottom: 32px;
+}
+
+
+
+.hero-delivery {
+    margin-top: 12px;
+}
+
+.delivery-icon {
+    width: 54px;
+    height: 28px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.delivery-text {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.delivery-small {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.delivery-time {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+
+
+.hero-image {
+    width: 925px;
+    height: auto;
+    float: right;
+    margin-top: 100px;
+}
