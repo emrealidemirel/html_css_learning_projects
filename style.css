@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: lightgray;
+    margin: 0;
+    padding: 50px;
+}
+
+h1 {
+    margin-bottom: 40px;
+}
+
+.project-link {
+    display: block;
+    margin: 15px auto;
+    padding: 15px;
+    width: 250px;
+    background-color: darkblue;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.project-link:hover {
+    background-color: navy;
+}

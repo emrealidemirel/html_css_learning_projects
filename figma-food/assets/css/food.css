@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui;
+}
+
+header {
+  padding: 28px;
+}
+
+.header-container {
+  align-items: center;
+}
+
+.container {
+  max-width: 1110px;
+  margin-inline: auto;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-menu {
+  
+  /* bu bir nesting yazım biçimi */
+  ul {
+    display: flex;
+    gap: 48px;
+
+    list-style: none;
+  }
+}
+
+.profile {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+
+  img {
+    border-radius: 50px;
+    /* tam yuvarlak yapmak için 50px (max ölçü) kullanılır */
+  }
+}
+
+.arrow-down {
+  width: 12px;
+}
+
+.hero-container {
+  max-width: 1440px;
+  margin-inline: auto;
+  background-image: url('../img/hero-bg.png');
+  background-repeat: no-repeat;
+
+  text-align: center;
+  padding-block: 259px;
+
+  margin-bottom: 64px;
+
+  h1 {
+    font-size: 80px;
+    color: #FFF;
+    margin-bottom: 40px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #FFF;
+    padding: 16px 64px;
+    background-color: #Fd7f15;
+  }
+}
+
+.categories-container {
+  margin-bottom: 112px;
+}
+
+.recipes-container {
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    font-size: 24px;
+    margin-bottom: 32px;
+  }
+
+  button {
+    padding: 16px 48px;
+    background-color: #FFF;
+    color: #000;
+    cursor: pointer;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    align-self: center;
+  }
+}
+
+.recipes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 23px;
+}
+
+.recipe-card {
+  max-width: 260px;
+}
+
+.call-to-action-container {
+  display: block;
+  background-image: url('../img/c2a-bg.png');
+  background-repeat: no-repeat;
+
+  text-align: center;
+  padding-block: 96px;
+
+  h2 {
+    font-size: 40px;
+    color: #FFF;
+    margin-bottom: 16px;
+  }
+}
+
+.c2a-input {
+  display: flex;
+  justify-content: center;
+  max-width: 500px;
+  margin-inline: auto;
+
+  input {
+    padding: 12px 16px;
+    border: 1px solid #c4c4c4;
+    width: calc(100% - 50.66px);
+  }
+
+  span {
+    background-color: #Fd7f15;
+    padding: 19.57px 25.33px;
+  }
+}
+
+.promo-container {
+  padding-block: 120px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.promo-left {
+  flex: 1;
+  gap: 16px;
+}
+
+.promo-left h2 {
+  font-size: 60px;
+  margin-bottom: 16px;
+}
+
+.promo-left .promo-top {
+  font-size: 14px;
+  font-family: 'Open Sans';
+}
+
+.promo-btn {
+  display: inline-block;
+  padding: 16px 40px;
+  background-color: #Fd7f15;
+  color: #FFF;
+  text-decoration: none;
+}
+
+.promo-right img {
+  width: 100%;
+  border-radius: 16px;
+}
+
+.featured-container {
+  display: flex;
+  flex-direction: column;
+  padding-block: 100px;
+}
+
+.featured-container h3 {
+  margin-bottom: 40px;
+  font-size: 24px;
+}
+
+.featured-cards {
+  display: flex;
+  gap: 32px;
+}
+
+.featured-card {
+  flex: 1;
+}
+
+.featured-card img {
+  width: 100%;
+  border-radius: 16px;
+  margin-bottom: 16px;
+}
+
+.featured-card h4 {
+  font-size: 30px;
+}
+
+footer {
+  padding-block: 80px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 160px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: gray;
+  font-size: 14px;
+}
+
+.footer-links {
+  ul {
+    display: flex;
+    gap: 56px;
+
+    list-style: none;
+  }
+}
+
+.footer-social {
+  display: flex;
+  gap: 40px;
+}
