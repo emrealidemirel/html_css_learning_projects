@@ -25,7 +25,7 @@ header {
 }
 
 .nav-menu {
-  
+
   /* bu bir nesting yazım biçimi */
   ul {
     display: flex;
@@ -33,6 +33,17 @@ header {
 
     list-style: none;
   }
+
+  /* li:nth-child(odd) {
+    background-color: lightcoral;
+    text-decoration: underline;
+
+  }
+
+  li:nth-child(even) {
+    background-color: lightskyblue;
+    text-decoration: underline;
+  } */
 }
 
 .profile {
@@ -51,14 +62,16 @@ header {
 }
 
 .hero-container {
-  max-width: 1440px;
+  width: 100vw;
+  margin-right: calc(50% - 50vw);
+  margin-left: calc(50% - 50 vw);
   margin-inline: auto;
   background-image: url('../img/hero-bg.png');
   background-repeat: no-repeat;
-
+  background-size: cover;
+  background-position: center;
   text-align: center;
   padding-block: 259px;
-
   margin-bottom: 64px;
 
   h1 {
@@ -89,6 +102,8 @@ header {
   }
 
   button {
+    /* display: block;
+    margin-inline: center; */
     padding: 16px 48px;
     background-color: #FFF;
     color: #000;
@@ -97,6 +112,10 @@ header {
     margin-bottom: 80px;
     align-self: center;
   }
+}
+
+button:hover {
+  background-color: lightcoral;
 }
 
 .recipes {
@@ -127,16 +146,18 @@ header {
 .c2a-input {
   display: flex;
   justify-content: center;
-  max-width: 500px;
+  width: 327px;
   margin-inline: auto;
 
+  /* nesting */
   input {
     padding: 12px 16px;
     border: 1px solid #c4c4c4;
-    width: calc(100% - 50.66px);
+    width: calc(100% - 64px);
   }
 
   span {
+    width: 64px;
     background-color: #Fd7f15;
     padding: 19.57px 25.33px;
   }
