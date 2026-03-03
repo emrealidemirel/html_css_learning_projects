@@ -1,0 +1,425 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #212121;
+}
+
+
+/* Header Start */
+header {
+    padding: 32px 0;
+}
+
+.container {
+    width: 1110px;
+    margin: 0 auto;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+.nav-list a {
+    text-decoration: none;
+    font-family: 'Open Sans';
+    font-size: 14px;
+}
+
+.has-dropdown a {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.header-icons {
+    display: flex;
+    gap: 31px;
+    /* adeti belirten mavi icon ile basket iconu beraber görsel olarak alındığı için gap 40px yerine 31px ayarlandı */
+    align-items: center;
+}
+/* Header End */
+
+/* Hero Start */
+.hero {
+    padding: 80px 0;
+}
+
+.hero-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.hero-content h2 {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 60px;
+    margin-bottom: 12px;
+}
+
+.hero-content p {
+    font-family: 'Open Sans';
+    font-size: 20px;
+    margin-bottom: 24px;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+.new-price {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.old-price {
+    font-family: 'Montserrat';
+    font-size: 24px;
+    color: #c4c4c4;
+    text-decoration: line-through;
+}
+
+.hero-button {
+    background-color: #0d6efd;
+    color: #ffffff;
+    font-family: 'Montserrat';
+    font-size: 32px;
+    padding: 16px 40px;
+    border: none;
+    border-radius: 3px;
+}
+
+/* Clients Start */
+.clients {
+    padding: 56px 0;
+}
+
+.clients-label {
+    margin-bottom: 24px;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    color: #807E7E;
+}
+
+.clients-logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Clients End */
+
+/* Products Start */
+.products {
+    padding: 120px 0;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px 24px;
+}
+
+.product-card img {
+    display: block;
+}
+
+.product-card h6 {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 24px;
+}
+
+.product-card p {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.product-price {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.product-price .price-amount {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.product-price .price-note {
+    font-family: 'Open Sans';
+    font-size: 16px;
+}
+/* Products End */
+
+/* Bundles Start */
+.bundles {
+    padding: 80px 0;
+}
+
+.bundles-title {
+    font-family: 'Montserrat';
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 64px;
+}
+
+.bundles-row {
+    display: flex;
+    gap: 30px;
+}
+
+.bundle-circle {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    text-align: center;
+}
+
+.bundle-circle:nth-child(1) {
+    background-color: #40FF93;
+}
+
+.bundle-circle:nth-child(2) {
+    background-color: #000000;
+}
+
+.bundle-circle:nth-child(3) {
+    background-color: #F68496;
+}
+
+.bundle-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.bundle-title span {
+    font-family: 'Montserrat';
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.bundle-circle:nth-child(2) .bundle-title span {
+    color: #FFFFFF;
+}
+
+.bundle-circle:nth-child(2) span:first-child {
+    font-size: 28px;
+}
+
+.bundle-circle:nth-child(3) span:first-child {
+    font-size: 28px;
+}
+
+
+.bundle-tag {
+    width: 136px;
+    height: 43px;
+    border-radius: 21.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Open Sans';
+    font-size: 22px;
+}
+
+.bundle-circle:nth-child(1) .bundle-tag {
+    background-color: #000000;
+    color: #40FF93;
+}
+
+.bundle-circle:nth-child(2) .bundle-tag {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.bundle-circle:nth-child(3) .bundle-tag {
+    background-color: #000000;
+    color: #F68496;
+}
+/* Bundles End */
+
+/* Articles Start */
+.articles {
+    padding: 80px 0;
+}
+
+.articles-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.articles-header h2 {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.view-all {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    color: #0D6EFD;
+}
+
+.view-all img {
+    width: 14px;
+    height: 14px;
+    display: block;
+}
+
+.articles-divider {
+    height: 1px;
+    background-color: #eaeaea;
+    margin: 16px 0 24px 0;
+}
+
+.articles-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 24px;
+}
+
+.article-card img {
+    width: 100%;
+    display: block;
+    border-radius: 6px;
+}
+
+.article-category {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 12px;
+    margin-top: 16px;
+}
+
+.article-title {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 4px;
+}
+/* Articles End */
+
+/* Faq Start */
+.faq {
+    padding: 120px 0;
+}
+
+.faq-main-title {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+
+.faq-divider {
+    height: 1px;
+    background-color: #c4c4c4;
+    margin: 24px 0;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-question p {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.faq-answer {
+    margin-top: 16px;
+}
+
+.faq-answer p {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 16px;
+}
+/* Faq End */
+
+/* CTA Start */
+.cta {
+    padding-bottom: 80px;
+}
+
+.cta-img {
+    width: 100%;
+    display: block;
+}
+/* CTA End */
+
+/* Footer Start */
+footer {
+    padding: 56px 0 40px 0;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 56px;
+    list-style: none;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    font-family: 'Open Sans';
+    font-size: 14px;
+}
+
+.footer-bottom {
+    margin-top: 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-copy {
+    font-family: 'Open Sans';
+    font-size: 14px;
+    color: #807E7E;
+}
+
+.footer-social {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+/* Footer End */
